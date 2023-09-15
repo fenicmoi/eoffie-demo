@@ -91,7 +91,7 @@ $u_id = $_SESSION['ses_u_id'];
                             if ($status == 1) {
                                 echo '<center><i class="fa fa-check"</i></p></center>';
                             } else {
-                                echo '<center><i class="fas fa-do-not-enter"></i></p></center>';
+                                echo '<center><i class="fa fa-binoculars"></i></p></center>';
                             } ?></td>
                 
                             <td>
