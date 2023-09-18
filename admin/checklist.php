@@ -52,10 +52,12 @@
 include 'function.php';
 include '../library/database.php';
 $pid=$_GET['pid'];
-print $pid;
+//print $pid;
+
 /* ************* ส่วนการตรวจสอบสถานะของเอกสาร */
 //ยืนยันแล้ว
 $sql="SELECT  pid  FROM paperuser WHERE pid=$pid and confirm=1";
+print $sql;
 $result=dbQuery($sql);
 $resNumOk=  dbNumRows($result);
 
@@ -67,6 +69,7 @@ $resNumNo= dbNumRows($result);
 
 
 /************** ตรวจสอบว่าเป็นหนังสื่อส่งภายนอกหรือภายใน */
+/*
 $sql="SELECT * FROM paperuser WHERE pid=$pid";
 $result=dbQuery($sql);
 $rowCheck=dbFetchArray($result);
@@ -84,7 +87,8 @@ if(!$rowCheck){
         }); 
     </script>"; 
 }
-
+*/
+/*
 $check=$rowCheck['sec_id'];
 if($check==0){       // ถ้าค่าเป็น 0 หมายถึงเป็นเอกสารส่งภายนอก
     $sql="SELECT p.pid,p.sec_id,p.dep_id,p.confirm,p.confirmdate,d.dep_name,d.phone
@@ -107,6 +111,7 @@ if($check==0){       // ถ้าค่าเป็น 0 หมายถึง�
  if(!$result){
      echo "ระบบมีปัญหาการเชื่อมต่อรายงาน";
  }
+ */
 ?>
     <div class="container-fluid">
         <div class="well" style="background-color: #006699">
