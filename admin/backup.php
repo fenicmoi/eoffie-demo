@@ -47,9 +47,9 @@ $u_id=$_SESSION['ses_u_id'];
                                     /**
                                     * Define database parameters here
                                     */
-                                    define("DB_USER", 'root');
-                                    define("DB_PASSWORD", 'fenicgal');
-                                    define("DB_NAME", 'autooffice2018');
+                                    define("DB_USER", 'phatthalun_ptl');
+                                    define("DB_PASSWORD", '07PyiAzxt');
+                                    define("DB_NAME", 'phatthalun_eoffice');
                                     define("DB_HOST", 'localhost');
                                     define("BACKUP_DIR", 'myphp-backup-files'); // Comment this line to use same script's directory ('.')
                                     define("TABLES", '*'); // Full backup
