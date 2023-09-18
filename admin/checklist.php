@@ -52,7 +52,7 @@
 include 'function.php';
 include '../library/database.php';
 $pid=$_GET['pid'];
-//print $pid;
+print $pid;
 /* ************* ส่วนการตรวจสอบสถานะของเอกสาร */
 //ยืนยันแล้ว
 $sql="SELECT  pid  FROM paperuser WHERE pid=$pid and confirm=1";
