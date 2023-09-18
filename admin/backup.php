@@ -53,7 +53,7 @@ $u_id=$_SESSION['ses_u_id'];
                                     define("DB_HOST", 'localhost');
                                     define("BACKUP_DIR", 'myphp-backup-files'); // Comment this line to use same script's directory ('.')
                                     define("TABLES", '*'); // Full backup
-                                    //define("TABLES", 'table1, table2, table3'); // Partial backup
+                                    define("TABLES", 'table1, table2, table3'); // Partial backup
                                     define("CHARSET", 'utf8');
                                     define("GZIP_BACKUP_FILE", true); // Set to false if you want plain SQL backup files (not gzipped)
                                     define("BATCH_SIZE", 1000); // Batch size when selecting rows from database in order to not exhaust system memory
